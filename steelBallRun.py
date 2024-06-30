@@ -34,5 +34,19 @@ def findYellow(pixel):
     else:
         return (255,255,255)
 
+def nut(pixel):
+    return 0
+
+def ballCheck(pixel):
+    return 0
+
+class Balls():
+    
+    def __init__(self, size, color, location):
+        super(Balls, self).__init__(size, color, location)
+        self.size = 0
+        self.color = (0,0,0)
+        self.location = []
+    
 applyEffect(image, findYellow)
 image.save(r"photoTestEnd.png")
